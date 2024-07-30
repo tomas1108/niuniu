@@ -29,7 +29,18 @@ const config = {
     extend: {
       colors: {
         "linear-gradient": "var(--button-linear-gradient)",
+        'dark-900': '#1A1A1A',
+        'dark-800': '#2C2C2C',
+        'gray-700': '#3D3D3D',
+        'gray-600': '#4E4E4E',
+        'gold-500': '#D4AF37',
+        'gold-400': '#FFD700',
+        'gold-600': '#B8860B',
+
         ...customColors
+      },
+      backgroundImage: {
+        'gradient-custom': 'linear-gradient(to right, #f2ecb6, #a96f44)',
       },
       dropShadow: {
         "chip-poker-10K": "0 35px 35px var(--chip-poker-10K-selected)",
