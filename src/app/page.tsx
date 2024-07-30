@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Slot from "~/components/slot";
-import { getVendorList } from "~/action/vendors.action";
+// import { getVendorList } from "~/action/vendors.action";
 
 // Dữ liệu ảnh
 const Logo = {
@@ -102,9 +102,9 @@ export default async function Home() {
   //   return () => clearInterval(interval);
   // }, []);
 
-  const slotData = await getVendorList();
-  if (!slotData?.success) return {};
-  console.log(slotData);
+  // const slotData = await getVendorList();
+  // if (!slotData?.success) return {};
+  // console.log(slotData);
 
   return (
     <>
@@ -223,9 +223,7 @@ export default async function Home() {
             </div>
           </div>
 
-          <Slot
-            data={slotData}
-          />
+     
         </div>
       </main>
 
